@@ -4,7 +4,7 @@ SingleInstance Mod for VRCModLoader
 
 ## Description
 
-This module allows you to use `world_id+instance_id` combinations in an already existing VRChat window.
+This module allows you to use `world_id:instance_id` combinations in an already existing VRChat window.
 Just copy text containing such a string to your clipboard and your game will ask you if you want to switch to it.
 
 ![Screenshot](https://i.imgur.com/152DBMA.png)
