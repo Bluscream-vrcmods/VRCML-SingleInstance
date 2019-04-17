@@ -1,4 +1,4 @@
-# VRCML-SingleInstance
+# VRCML-SingleInstance ![](https://img.shields.io/github/downloads/Bluscream/VRCML-SingleInstance/total.svg)
 SingleInstance Mod for VRCModLoader
 
 
