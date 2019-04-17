@@ -5,7 +5,8 @@ SingleInstance Mod for VRCModLoader
 ## Description
 
 This module allows you to use `world_id:instance_id` combinations in an already existing VRChat window.
-Just copy text containing such a string to your clipboard and your game will ask you if you want to switch to it. You can use `force=true` anywhere before the actual world_id to skip the confirmation dialog in case your vrchat is bugged in a way that you can't confirm it (example below)
+Just copy text containing such a string to your clipboard and your game will ask you if you want to switch to it.
+You can use `force=true` anywhere before the actual world_id to skip the confirmation dialog in case your vrchat is bugged in a way that you can't confirm it (example below)
 
 ![Screenshot](https://i.imgur.com/152DBMA.png)
 
