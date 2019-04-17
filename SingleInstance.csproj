@@ -76,8 +76,12 @@
     <Reference Include="VRCTools">
       <HintPath>G:\Steam\steamapps\common\VRChat\Mods\VRCTools.dll</HintPath>
     </Reference>
+    <Reference Include="VRMarcoClient">
+      <HintPath>G:\Steam\steamapps\common\VRChat\Mods\VRMarcoClient.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logging.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection.cs" />

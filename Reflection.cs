@@ -12,7 +12,7 @@ namespace SingleInstance
         internal static void EnterWorld(string id)
         {
             try {
-                Reflection.enterWorld.Invoke(null, null, [id]);
+                // Reflection.enterWorld.Invoke(null, null, [id]);
             } catch (Exception ex){
                 SingleInstance.Log($"Unable to enter World :/ {ex.Message}");
             }
