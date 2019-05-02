@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace SingleInstance
 {
-    [VRCModInfo("Single Instance", "2.1", "Bluscream")]
+    [VRCModInfo("Single Instance", "2.1.2", "Bluscream")]
     public class SingleInstance : VRCMod
     {
         string world_pattern = @"(wrld_[a-z0-9]{8}(?:-[a-z0-9]{4}){3}-[a-z0-9]{12}):(\d+)";
@@ -20,7 +20,7 @@ namespace SingleInstance
 
         void OnApplicationStart() {
             Log($"OnApplicationStart");
-            // Log($"HWID: {VRC.Core.API.DeviceID}");
+            Log($"HWID: {VRC.Core.API.DeviceID}");
             System.Threading.Mutex m = new System.Threading.Mutex(false, "VRChat");
             if (m.WaitOne(1, false) == false)
             {
@@ -56,6 +56,7 @@ namespace SingleInstance
             } catch (Exception) { }*/
             Log($"Clipboard changed to: \"{clipboard}\"");
             lastClipboard = clipboard;
+            clipboard = clipboard.Trim().ToLower();
             if (!clipboard.Contains("wrld_")) return;
            var match = Regex.Match(clipboard, world_pattern_private);
            if (!match.Success)
@@ -116,7 +117,7 @@ namespace SingleInstance
 
         public static void Log(string message)
         {
-            VRCModLogger.Log($"SingleInstance > ${message}");
+            VRCModLogger.Log($"SingleInstance > {message}");
         }
 
         private string GetClipboardContent()
