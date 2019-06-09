@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace SingleInstance
 {
-    [VRCModInfo("Single Instance", "2.1.2", "Bluscream")]
+    [VRCModInfo("Single Instance", "2.1.2.1", "Bluscream")]
     public class SingleInstance : VRCMod
     {
         string world_pattern = @"(wrld_[a-z0-9]{8}(?:-[a-z0-9]{4}){3}-[a-z0-9]{12}):(\d+)";
